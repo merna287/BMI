@@ -15,7 +15,7 @@ class _InkWellConstructorWidgetState extends State<InkWellConstructorWidget> {
     return InkWell(
       onTap: widget.onTap,
       child: Container(
-        height: 65,
+        height: 90,
         decoration: BoxDecoration(color: Color(0xFFE83D67)),
         child: Center(
           child: Text(

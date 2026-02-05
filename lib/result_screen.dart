@@ -21,11 +21,12 @@ class ResultScreen extends StatelessWidget {
             Text(
               "Your Result",
               style: TextStyle(
-                fontSize: 33,
+                fontSize: 40,
                 fontWeight: FontWeight.w700,
                 color: Color(0xffFFFFFF),
               ),
             ),
+            SizedBox(height: 25,),
             Expanded(
               child: Container(
                 width: double.infinity,

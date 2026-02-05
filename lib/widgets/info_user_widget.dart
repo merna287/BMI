@@ -26,31 +26,30 @@ class InfoUserWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           color: Color(0xff333244),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w300,
-                color: Color(0xff888C9E),
+        child: Padding(
+          padding: const EdgeInsets.all(22.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w300,
+                  color: Color(0xff888C9E),
+                ),
               ),
-            ),
-            SizedBox(height: 5),
-            Text(
-              value.toInt().toString(),
-              style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.w700,
-                color: Color(0xffFFFFFF),
+              SizedBox(height: 5),
+              Text(
+                value.toInt().toString(),
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xffFFFFFF),
+                ),
               ),
-            ),
-            SizedBox(height: 5),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              SizedBox(height: 5),
+              Row(
                 children: [
                   SizedBox(
                     width: 40,
@@ -67,6 +66,7 @@ class InfoUserWidget extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Spacer(),
                   SizedBox(
                     width: 40,
                     height: 40,
@@ -84,8 +84,8 @@ class InfoUserWidget extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
